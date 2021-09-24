@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <title>Pixi Game</title>
-      <link rel="stylesheet" href="style.css">
-      <script src="./app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Vs Zombie</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("abs.jpg");
+        }
+
+        h1{
+            color: whitesmoke;
+        }
+
+        h3{
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            color: rgb(250, 234, 234);
+        }
+
+        canvas{
+            box-shadow: black 30px 20px 70px;
+        }
+    </style>    
 </head>
+
 <body>
-      <div id="display"></div>
-      <script type="text/javascript" src="./app.js"></script>
+    <h1>Snake vs Zombie</h1>
+    <h3>Try to get the apples on your way. To stay alive avoid the walls and your own tail. <br>  But remember, anytime, a Zombie apple can kill you if you have bad luck and eat one. <br>  Because you never know what plans life has for you...</h3>
+    <canvas id="game" width="400" height="400" >
+
+    <script src="app.js"></script>
 </body>
 </html>
